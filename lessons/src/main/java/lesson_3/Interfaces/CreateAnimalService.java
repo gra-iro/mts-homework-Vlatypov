@@ -26,7 +26,6 @@ public interface CreateAnimalService {
                 Wolf wold = new Wolf();
                 System.out.println("Create wolf " + (counter+1));
             }
-
             counter++;
         }
     }

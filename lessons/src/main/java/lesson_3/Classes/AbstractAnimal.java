@@ -8,13 +8,40 @@ abstract class AbstractAnimal implements Animal {
     protected Double cost;
     protected String character;
 
-    public abstract String getBreed();
-    public abstract String getName();
-    public abstract String getCharacter();
-    public abstract Double getCost();
+    public String getBreed() {
+        return breed;
+    }
 
-    public abstract String setBreed(String breed);
-    public abstract String setName(String name);
-    public abstract String setCharacter(String character);
-    public abstract Double setCost(Double cost);
+    public String getCharacter() {
+        return character;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Double getCost() {
+        return cost;
+    }
+
+    public String setBreed(String breed) {
+        return breed;
+    }
+
+    public String setCharacter(String character) {
+        return character;
+    }
+
+    public String setName(String name) {
+        return name;
+    }
+
+    public Double setCost(Double cost) {
+        if (cost < 0){
+            return null;
+        }
+        else {
+            return cost;
+        }
+    }
 }
